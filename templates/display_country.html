@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DISPLAY COUNTRY</h1>
+    <table border="3px">
+        <tr>
+            <th>
+                Country_Id
+            </th>
+            <th>
+                Country_Name
+            </th>
+            <th>
+                Population
+            </th>
+        </tr>
+    {% for co in QLCO %}
+        <tr>
+            <td>
+                {{ co.Country_id }}
+            </td>
+            <td>
+                {{ co.Country_Name }}
+            </td>
+            <td>
+                {{ co.population }}
+            </td>
+
+
+        </tr>
+    {% endfor %}    
+    </table>
+</body>
+</html>
